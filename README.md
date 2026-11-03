@@ -160,3 +160,6 @@ Write 1 to 2 paragraphs here about what you learned:
 
 
 
+## Evaluation Notes
+
+The Happy Pop profile produced the most accurate recommendations because songs matched genre, mood, and energy preferences. Edge-case profiles such as K-pop Calm revealed limitations because the dataset did not contain matching genres. This demonstrated that the recommender relies heavily on genre matching and may create a filter bubble by repeatedly recommending similar songs.

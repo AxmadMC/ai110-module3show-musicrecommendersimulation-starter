@@ -18,17 +18,62 @@ def main() -> None:
     # Starter example profile
     user_prefs = {"genre": "pop", "mood": "happy", "energy": 0.8}
 
-    recommendations = recommend_songs(user_prefs, songs, k=5)
+    modes = {
+        "1": "Genre-First",
+        "2": "Mood-First",
+        "3": "Energy-Focused",
+    }
+    print("Choose a recommendation mode:")
+    for choice, mode_name in modes.items():
+        print(f"{choice}. {mode_name}")
 
-    print("\nTop recommendations:\n")
-    for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {explanation}")
-        print()
+    while True:
+        choice = input("Enter 1, 2, or 3: ").strip()
+        if choice in modes:
+            mode = modes[choice]
+            break
+        print("Invalid choice. Please enter 1, 2, or 3.")
+
+    print(f"\nActive recommendation mode: {mode}")
+    recommendations = recommend_songs(user_prefs, songs, k=5, mode=mode)
+
+    headers = ("Song Title", "Score", "Reasons")
+    rows = [
+        (song["title"], f"{score:.2f}", explanation)
+        for song, score, explanation in recommendations
+    ]
+    widths = [
+        max([len(header)] + [len(row[index]) for row in rows])
+        for index, header in enumerate(headers)
+    ]
+    border = "+" + "+".join("-" * (width + 2) for width in widths) + "+"
+
+    print("\nTop recommendations:")
+    print(border)
+    print("| " + " | ".join(header.ljust(width) for header, width in zip(headers, widths)) + " |")
+    print(border)
+    for row in rows:
+        print("| " + " | ".join(value.ljust(width) for value, width in zip(row, widths)) + " |")
+    print(border)
 
 
 if __name__ == "__main__":
     main()
+
+    pop_profile = {
+    "genre": "pop",
+    "mood": "happy",
+    "energy": 0.80
+}
+
+lofi_profile = {
+    "genre": "lofi",
+    "mood": "chill",
+    "energy": 0.40
+}
+
+rock_profile = {
+    "genre": "rock",
+    "mood": "intense",
+    "energy": 0.90
+}

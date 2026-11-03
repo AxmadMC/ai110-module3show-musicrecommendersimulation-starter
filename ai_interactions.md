@@ -41,3 +41,32 @@
 **How does the pattern appear in your final code?**
 
 <!-- Point to the relevant class or method -->
+Prompt Used:
+[paste the prompt]
+
+AI Suggestions:
+[summarize what Copilot generated]
+
+Manual Verification:
+I reviewed the generated scoring logic and verified that songs were still loading correctly and recommendations were produced successfully.
+
+
+Design Pattern Discussion:
+
+I asked Copilot for a way to support multiple scoring modes.
+
+Suggested Pattern:
+Simple strategy-style approach using configurable scoring weights.
+
+Manual Verification:
+Verified that recommendations change when a different mode is selected.
+
+
+Prompt Used:
+Add a diversity penalty for repeated artists.
+
+AI Contribution:
+Copilot suggested reducing scores for artists already appearing in the recommendation list.
+
+Manual Verification:
+Verified that recommendation results included greater artist variety.
