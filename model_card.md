@@ -70,7 +70,8 @@ Prompts:
 - Cases where the system overfits to one preference  
 - Ways the scoring might unintentionally favor some users  
 
----
+## Algorithmic Approach
+This recommender uses content-based filtering. Songs are compared against user preferences for genre, mood, and energy. Points are awarded for matching genres and moods, while additional similarity points are given for energy levels that closely match user preferences. Songs are ranked by total score and returned as recommendations with explanations.
 
 ## 7. Evaluation  
 

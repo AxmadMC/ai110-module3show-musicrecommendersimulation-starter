@@ -9,3 +9,25 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+
+
+11,Velvet Current,Mira Sol,bossa nova,romantic,0.48,96,0.72,0.68,0.74
+12,Open Road Morning,June Wilder,country,hopeful,0.69,108,0.82,0.71,0.42
+13,Chrome Cathedral,Iron Meridian,metal,intense,0.96,168,0.32,0.51,0.03
+14,Sunday Signal,Golden Static,reggae,relaxed,0.55,84,0.77,0.79,0.36
+15,Paper Moons,Elian Grey,folk,nostalgic,0.31,76,0.58,0.39,0.91
+16,Neon Orchard,Club Meridian,house,euphoric,0.88,126,0.86,0.91,0.08
+17,Glass Horizon,North Arc,classical,reflective,0.24,64,0.46,0.12,0.68
+18,Kitchen Radio,Marble Street,funk,playful,0.79,112,0.81,0.93,0.14
+19,Low Tide Letters,June Harbor,trip-hop,melancholic,0.43,82,0.29,0.47,0.57
+20,Sunroom Parade,Atlas Bloom,afrobeat,celebratory,0.85,118,0.91,0.89,0.21
+21,Bluegrass Afterglow,The Cedar Lines,bluegrass,homesick,0.64,104,0.62,0.73,0.78
+22,Cathedral of Sparks,Sunday Choir,gospel,triumphant,0.87,122,0.89,0.76,0.19
+23,Concrete Kites,Static Youth,ska,rebellious,0.83,138,0.74,0.88,0.12
+24,Afterimage Circuit,Low Orbit,drum and bass,restless,0.94,174,0.58,0.82,0.04
+25,Red Thread Waltz,Lucia Mar,flamenco,passionate,0.77,116,0.79,0.69,0.31
+26,Clouds in the Amp,Silver Comet,shoegaze,dreamy,0.52,98,0.45,0.43,0.61
+27,Long Way Home,Westward Atlas,post-rock,awe-struck,0.71,90,0.66,0.38,0.47
+28,Mirrorball Fever,Disco Archive,disco,carefree,0.86,120,0.92,0.95,0.11
+29,Eastbound Signal,North Borough,grime,defiant,0.89,140,0.51,0.72,0.08
+30,Guava Skies,Mar Azul,reggaeton,flirtatious,0.82,96,0.88,0.94,0.17
